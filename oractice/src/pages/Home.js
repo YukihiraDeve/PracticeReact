@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import Button from '../components/Button';
 import HeadBar from '../components/HeadBar';
+import FirstZone from '../components/FirstZone';
+import LightEffect from '../components/LightEffect';
+
 
 const Home = () => {
     return (
     
         <div>
+            
             <HeadBar />
+            <FirstZone />
+            
         </div>
 
 
