@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import Header from '../components/Header';
 import Button from '../components/Button';
+import HeadBar from '../components/HeadBar';
 
 const Home = () => {
     return (
     
         <div>
-          <Header />
-          <Button />
+            <HeadBar />
         </div>
 
 
