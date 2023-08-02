@@ -6,32 +6,49 @@ import "../styles/components/Flipped.css"
 const words = ["Développeur", "Photographe", "DevOPS"];
 
 const FirstZone = () => {
-    const [index, setIndex] = useState(0);
-    const [fadeIn, setFadeIn] = useState(true);
-  
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setFadeIn(false);
-        setTimeout(() => {
-          setIndex((prevIndex) => (prevIndex + 1) % words.length);
-          setFadeIn(true);
-        }, 500);
-      }, 3000);
-  
-      return () => clearInterval(interval);
-    }, []);
+        const [index, setIndex] = useState(0);
+        const [text, setText] = useState('');
+      
+        useEffect(() => {
+          setIndex(0);
+          setText('');
+        }, []);
+      
+        useEffect(() => {
+          const typeEffect = () => {
+            let word = words[index];
+            let tempText = '';
+            let typing = setInterval(() => {
+              if (tempText.length < word.length) {
+                tempText += word.charAt(tempText.length);
+                setText(tempText);
+              } else {
+                clearInterval(typing);
+                setTimeout(() => setIndex((prevIndex) => (prevIndex + 1) % words.length), 3000);
+              }
+            }, 100);
+          };
+          
+          if (index < words.length) {
+            typeEffect();
+          }
+      
+          return () => {
+            setText('');
+          };
+        }, [index]);
+      
   
 
   return (
     <div className="flex flex-col-reverse md:flex-row justify-between items-stretch w-full bg-[#30689C] p-0 m-0 h-screen">
     <div className="text-section flex flex-col justify-center w-full md:w-1/2 space-y-4 md:space-y-8 p-6 sm:p-12">
       <h1 className="text-white font-montserrat text-4xl md:text-8xl font-bold">Hey<br />Welcome :)</h1>
-      <p className={`text-white font-montserrat text-2xl md:text-4xl font-light m-0 `}>
-        Je m’appelle Valentin,
-        <p>
-          Et je suis <span className={`${fadeIn ? 'fade-in' : 'fade-out'}`}> {words[index]}</span>
+      <p className="text-white font-montserrat text-2xl md:text-4xl font-light m-0">
+          Je m’appelle Valentin,
+          <br />
+          Et je suis <span className="typewriter-text">{text}</span>
         </p>
-      </p>
     </div>
 
       <LightEffect color="#FF5733" top="10vh" left="10vw" />
