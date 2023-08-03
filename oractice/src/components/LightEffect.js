@@ -7,8 +7,8 @@ const LightEffect = ({ color = '#B8F868', top, left }) => {
     const interval = setInterval(() => {
       const currentTop = parseFloat(position.top);
       const currentLeft = parseFloat(position.left);
-      const newTopValue = Math.min(Math.max(currentTop + (Math.random() * 10 - 5), 0), 90); // Limite entre 0 et 90
-      const newLeftValue = Math.min(Math.max(currentLeft + (Math.random() * 10 - 5), 0), 90); // Limite entre 0 et 90
+      const newTopValue = Math.min(Math.max(currentTop + (Math.random() * 10 - 5), 0), 80); // Limite entre 0 et 90
+      const newLeftValue = Math.min(Math.max(currentLeft + (Math.random() * 10 - 5), 0), 80); // Limite entre 0 et 90
       const newTop = newTopValue + 'vh'; 
       const newLeft = newLeftValue + 'vw';
       setPosition({ top: newTop, left: newLeft });

@@ -1,0 +1,45 @@
+.bubbles-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px; /* Vous pouvez ajuster cette valeur pour contrôler l'espace entre les éléments */
+    margin: 0 15rem;
+}
+  
+  .bubble-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .bubble {
+    width: 9.5625rem;
+    height: 9.5625rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 1rem; /* Ajout d'un espace en dessous de l'image. Ajustez cette valeur selon vos besoins */
+  }
+  
+  
+  .year {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 1rem; /* Ajout d'un espace au-dessus du titre. Ajustez cette valeur selon vos besoins */
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+  
