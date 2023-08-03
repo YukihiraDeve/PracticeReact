@@ -12,7 +12,7 @@ const LightEffect = ({ color = '#B8F868', top, left }) => {
       const newTop = newTopValue + 'vh'; 
       const newLeft = newLeftValue + 'vw';
       setPosition({ top: newTop, left: newLeft });
-    }, 50); // Changer de position toutes les secondes
+    }, 50); // change la position toutes les 50ms
 
     return () => clearInterval(interval);
   }, [position]);
@@ -22,10 +22,10 @@ const LightEffect = ({ color = '#B8F868', top, left }) => {
       className="rounded-full border border-black absolute transition-all duration-1000 ease-in-out"
       style={{
         backgroundColor: color,
-        filter: 'blur(3vw)',
+        filter: 'blur(5vw)',
         width: '10vw',
         height: '10vw',
-        opacity: '0.9',
+        opacity: '0.7',
         ...position,
       }}
     ></div>

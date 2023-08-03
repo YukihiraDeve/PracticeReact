@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import HeadBar from '../components/HeadBar';
 import FirstZone from '../components/FirstZone';
-import LightEffect from '../components/LightEffect';
+import SecondZone from '../components/SecondZone';
 
 
 const Home = () => {
@@ -11,6 +11,7 @@ const Home = () => {
             
             <HeadBar />
             <FirstZone />
+            <SecondZone />
             
         </div>
 

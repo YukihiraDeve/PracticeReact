@@ -24,7 +24,7 @@ const FirstZone = () => {
                 setText(tempText);
               } else {
                 clearInterval(typing);
-                setTimeout(() => setIndex((prevIndex) => (prevIndex + 1) % words.length), 3000);
+                setTimeout(() => setIndex((prevIndex) => (prevIndex + 1) % words.length), 4000);
               }
             }, 100);
           };
@@ -44,7 +44,7 @@ const FirstZone = () => {
     <div className="flex flex-col-reverse md:flex-row justify-between items-stretch w-full bg-[#30689C] p-0 m-0 h-screen">
     <div className="text-section flex flex-col justify-center w-full md:w-1/2 space-y-4 md:space-y-8 p-6 sm:p-12">
       <h1 className="text-white font-montserrat text-4xl md:text-8xl font-bold">Hey<br />Welcome :)</h1>
-      <p className="text-white font-montserrat text-2xl md:text-4xl font-light m-0">
+        <p className="text-white font-montserrat text-2xl md:text-4xl font-light m-0">
           Je m’appelle Valentin,
           <br />
           Et je suis <span className="typewriter-text">{text}</span>
