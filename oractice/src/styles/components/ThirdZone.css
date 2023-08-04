@@ -1,0 +1,20 @@
+.third-zone-container {
+    background: #1B3F61;
+    width: 100%; /* Largeur à 100% pour s'adapter à l'écran */
+    max-width: 160rem; /* Largeur maximale */
+    height: auto; /* Hauteur auto pour être responsive */
+    min-height: 80.0625rem; /* Hauteur minimale */
+  }
+  
+  .title {
+    max-width: 159.8125rem;
+    margin: auto;
+    font-weight: 700;
+  }
+  
+  .subtitle {
+    max-width: 120.0625rem;
+    margin: auto;
+    font-weight: 400;
+  }
+  
