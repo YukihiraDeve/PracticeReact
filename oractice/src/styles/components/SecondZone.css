@@ -3,7 +3,7 @@
     width: 100%; /* Largeur à 100% pour s'adapter à l'écran */
     max-width: 160rem; /* Largeur maximale */
     height: auto; /* Hauteur auto pour être responsive */
-    min-height: 317.0625rem; /* Hauteur minimale */
+    min-height: 70.0625rem; /* Hauteur minimale */
   }
   
   .second-zone-container {

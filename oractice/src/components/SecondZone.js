@@ -5,6 +5,9 @@ import { useSpring, animated } from 'react-spring';
 import "../styles/components/SecondZone.css"
 import BubbleItem from './BubbleItem';
 import logoImage from '../assets/images/logo192.png';
+import Hanyang from '../assets/images/Hanyang.png';
+import ESGI from '../assets/images/ESGI.jpg'
+import MXDATA from '../assets/images/mxdata.jpg'
 
 const SecondZone = () => {
   const [titleProps, setTitleProps] = useSpring(() => ({
@@ -81,7 +84,7 @@ const SecondZone = () => {
       <VisibilitySensor onChange={onVisibilityChange} partialVisibility>
         <div>
           <animated.h2 style={titleProps} className="title text-center font-montserrat text-2xl md:text-6xl font-bold">My Storys</animated.h2>
-          <animated.p style={subtitleProps} className="subtitle text-center font-montserrat text-xl md:text-xl font-light mt-4 md:mt-8">Je suis née le 24 février 2002, passionné depuis toujours en informatique, j’ai décider de me diriger vers ce domaine dès ma plus tendre enfance</animated.p>
+          <animated.p style={subtitleProps} className="subtitle text-center font-montserrat text-xl md:text-xl font-light mt-4 md:mt-8">Je suis née le 24 février 2002, passionné depuis toujours en informatique, <br></br> j’ai décider de me diriger vers ce domaine dès ma plus tendre enfance</animated.p>
         </div>
       </VisibilitySensor>
       <br />
@@ -91,19 +94,19 @@ const SecondZone = () => {
     <VisibilitySensor onChange={onVisibilityChangePart2} partialVisibility>
     <div className="bubbles-wrapper">
     <animated.div style={bubble1Props}>
-        <BubbleItem logo={logoImage} year="2025" title="Diplomé ESGI" description="Diplomé en tant qu’ingénieur Blockchain"/>
+        <BubbleItem logo={ESGI} year="2025" title="Diplomé ESGI" description="Diplomé en tant qu’ingénieur Blockchain"/>
     </animated.div>
     <animated.div style={bubble2Props}>
-        <BubbleItem logo={logoImage} year="2023" title="Diplomé ESGI" description="Diplomé en sécurité informatique à l’ESGI"/>
+        <BubbleItem logo={ESGI} year="2023" title="Diplomé ESGI" description="Diplomé en sécurité informatique à l’ESGI"/>
     </animated.div>
     <animated.div style={bubble3Props}>
-        <BubbleItem logo={logoImage} year="2022" title="Echange Universitaire" description="Echange universitaire à Hanyang university en Corée du sud "/>
+        <BubbleItem logo={Hanyang} year="2022" title="Echange Universitaire" description="Echange universitaire à Hanyang university en Corée du sud "/>
     </animated.div>
     <animated.div style={bubble4Props}>
-        <BubbleItem logo={logoImage} year="2021" title="Début Alternance" description="Départ de la formation alternance chez MXDATA"/>
+        <BubbleItem logo={MXDATA} year="2021" title="Début Alternance" description="Départ de la formation alternance chez MXDATA"/>
     </animated.div>
     <animated.div style={bubble5Props}>
-        <BubbleItem logo={logoImage} year="2020" title="Rentrée ESGI Paris" description="Formation initial"/>
+        <BubbleItem logo={ESGI} year="2020" title="Rentrée ESGI Paris" description="Formation initial"/>
     </animated.div>
     <animated.div style={bubble6Props}>
         <BubbleItem logo={logoImage} year="2020" title="Baccalauréat" description="Diplomée Science Développement Durable et Système Information Numérique "/>
