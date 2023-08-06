@@ -1,10 +1,15 @@
 import React from 'react';
+import CategoriePhoto from '../components/CategoriePhoto';
+
+
 
 const Photographie = () => {
     return (
+
         <div>
-            <h1>Photographie</h1>
+            <CategoriePhoto />
         </div>
+        
     );
 }
 
