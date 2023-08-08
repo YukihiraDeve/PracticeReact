@@ -65,6 +65,8 @@ function CategoriePhoto() {
     open ? 0.1 : 0.6,
   ]);
 
+
+  //teste
   return (
     <div className="wrapper">
       <animated.div
