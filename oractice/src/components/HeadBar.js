@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../assets/images/yukihiradev.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -12,9 +13,7 @@ const Header = () => {
       />
     </div>
     <div className="navigation flex">
-      <a href="#photographie" className="text-white px-4 sm:px-2" style={linkStyle}>
-        Photographie
-      </a>
+      <Link to="/photographie" className="text-white px-4 sm:px-2" style={linkStyle} >Photographie</Link> 
       <a href="#cv" className="text-white px-4 sm:px-2" style={linkStyle}>
         CV
       </a>
